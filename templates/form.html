@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Beyond The Boundary</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1><a href="{{ url_for('home') }}">Beyond The Boundary</a></h1>
+      <form id="prediction-form" action="{{ url_for('form') }}" method="post">
+        <label for="player-name">
+          <span class="label-text">Player Name</span>
+          <input
+            type="text"
+            id="player-name"
+            name="player_name"
+            list="player-list"
+            required
+          />
+        </label>
+        <br /><br />
+        <label for="opposition-team">
+          <span class="label-text">Opposition Team</span>
+          <input
+            type="text"
+            id="opposition-team"
+            name="opposition_team"
+            list="team-list"
+            required
+          />
+        </label>
+        <br /><br />
+        <button type="submit">Predict</button>
+      </form>
+    </div>
+  </body>
+</html>

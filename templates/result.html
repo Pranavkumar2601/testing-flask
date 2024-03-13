@@ -1,0 +1,137 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: auto auto;
+        padding: 2rem;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(45deg, #f06, #f80);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient 3s ease-in-out infinite;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        background-color: #f06;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #f80;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Result Page</h1>
+      <h2>Recommended Player: {{ player }}</h2>
+      <p>Reason: {{ reason }}</p>
+      <a href="{{ url_for('home') }}"><button>Go to Home</button></a>
+    </div>
+  </body>
+</html>  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Page</title>
+    <style>
+      body {
+        background-color: #1d2227;
+        height: 100vh;
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .container {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #f06;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: #333;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        background-color: #f06;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #f80;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Result Page</h1>
+      <h2>Recommended Player: {{ player }}</h2>
+      <p>Reason: {{ reason }}</p>
+      <a href="{{ url_for('home') }}"><button>Go to Home</button></a>
+    </div>
+  </body>
+</html>
